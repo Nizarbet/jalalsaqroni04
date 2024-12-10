@@ -1,0 +1,52 @@
+/* Body background color */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 183, 255, 0.5), rgba(43, 0, 255, 0.5));
+    
+}
+
+/* Game grid */
+#game {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    margin-top: 50px; /* Adjusted to make room for the logo */
+}
+
+/* Logo styling */
+#logo1 {
+        margin-top: 20px;
+        width: 100px; /* Adjust size as needed */
+        height: 100px; /* Ensure height matches width for a perfect circle */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fills the circular area */
+}
+
+/* Button styles */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button.bone {
+    background-color: red;
+    color: white;
+}
+
+button.chicken {
+    background-color: green;
+    color: white;
+}
+
+/* Message styling */
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+    color: red;
+}
